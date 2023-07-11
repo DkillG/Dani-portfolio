@@ -5,10 +5,11 @@ import { usePageStore } from "../store/pageStore";
 import { Fade } from "react-reveal";
 
 import fireGuy from "../assets/images/fireGuy.svg";
+import ellipse_m from "../assets/images/ellipse_m.svg";
+import ellipse_s from "../assets/images/ellipse_s.svg";
+import ellipse_b from "../assets/images/ellipse_b.svg";
 import fireIcon from "../assets/images/fireIcon.svg";
-import ellipse_1 from "../assets/images/ellipse_2.webp";
-import ellipse_2 from "../assets/images/ellipse_4.webp";
-import ellipse_4 from "../assets/images/ellipse_6.webp";
+import boomIcon from "../assets/images/boom.svg";
 import chainsawManRoblox from "../assets/images/ChainsawManRoblox.webp";
 
 import RbxWowPreview from "../assets/images/Rbxwow_preview.svg";
@@ -73,13 +74,13 @@ const Landing = () => {
       <section id="Home">
         <div className="relative">
           <img
-            src={ellipse_1}
-            className="image-op absolute z-[-1] top-[-25%] left-[-5%]"
+            src={ellipse_s}
+            className="image-op absolute z-[-1] top-[-20%] left-0 w-1000 h-1000"
             alt="red ellipse"
           />
           <Fade right>
             <div className="flex px-2 md:px-4">
-              <div className="mt-48">
+              <div className="mt-48 pl-12">
                 <h1 className="font-bold text-5xl md:text-7xl">
                   Hi, I'm Daniel
                 </h1>
@@ -96,7 +97,7 @@ const Landing = () => {
               <img
                 src={fireGuy}
                 alt="Fire guy head colors"
-                className="absolute w-64 top-8 md:w-64 sm:top-[-8%] sm:right-8 md:top-12 md:right-8 right-0 lg:w-auto lg:right-28 lg:top-[-20%] z-[-1]"
+                className="absolute w-65 top-8 md:w-64 sm:top-[-8%] sm:right-8 md:top-12 md:right-8 right-[-50] lg:w-auto lg:right-28 lg:top-[-20%] z-[-1]"
               />
             </div>
           </Fade>
@@ -107,8 +108,8 @@ const Landing = () => {
       <section className="mt-24 md:mt-24 px-2 md:px-4" id="About">
         <Fade bottom>
           <div className="flex items-center">
-            <img alt="fire multiple colors" className="image-vert w-32 md:w-96 lg:w-auto" src={fireIcon} />
-            <div className="flex flex-col gap-y-4">
+            <img alt="fire multiple colors" className="image-vert w-35 md:w-96 lg:w-auto pl-5" src={fireIcon} />
+            <div className="flex flex-col gap-y- gap-x pl-40">
               <h2 className="font-bold text-2xl md:text-6xl">Skills</h2>
               <h3 className="text-secondary-color font-semibold text-lg md:text-2xl md:w-[80%]">
                 Experienced in Lua, Python, JS, TS, Solidity, MongoDB, React,
@@ -120,16 +121,16 @@ const Landing = () => {
       </section>
 
       {/*Third section*/}
-      <section className="flex flex-col gap-y-44 mt-52" id="Projects">
+      <section className="flex flex-col gap-y-10 mt-[-5%]" id="Projects">
         {/*MyMetaverse project*/}
         <Fade bottom>
           <div className="relative">
-            <div className="flex flex-col-reverse items-center md:flex-row gap-y-8 px-2 md:px-4">
-              <div className="flex flex-col gap-y-4 text-center md:text-left">
+            <div className="flex flex-col items-center md:flex-row gap-y-8 px-2 md:px-4">
+              <div className="flex flex-col gap-y-4 text-center md:text-left pl-20">
                 <h2 className="font-bold text-2xl md:text-4xl">
                   MyMetaverse - Ecosystem
                 </h2>
-                <h3 className="text-secondary-color font-semibold text-lg md:text-2xl md:w-[80%]">
+                <h3 className="text-secondary-color font-semibold text-lg md:text-2xl md:w-[70%]">
                   MyMetaverse harnesses the power of gaming, blockchain, AR, and
                   AI to help brands, game studios, and app developers reach new
                   heights of marketing success, customer retention, and
@@ -149,15 +150,17 @@ const Landing = () => {
                   setIndexImage(0);
                 }}
                 src={myMetaversePreview}
-                className="w-96 rounded-[20px] hover:cursor-pointer hover:scale-105 transition-all ease-in-out duration-500"
+                className="w-[26%] pr-10 rounded-[20px] hover:cursor-pointer hover:scale-105 transition-all ease-in-out duration-500"
                 alt="MyMetaverse Parallel Planes"
               />
             </div>
-            <img
-              src={ellipse_2}
-              className="absolute w-full h-full bottom-0 md:top-0 z-[-1]"
+            <div className="image-op absolute bottom-[-180%] md:top-0 z-[-1] fixed right-0 flex justify-center items-center">
+              <img
+              src={ellipse_m}
+              className=" w-1000 h-1000"
               alt="blue ellipse"
-            />
+            /></div>
+            
           </div>
         </Fade>
 
@@ -170,10 +173,10 @@ const Landing = () => {
                 setIndexImage(1);
               }}
               src={chainsawManRoblox}
-              className="rounded-[20px] w-full md:w-1/2 hover:cursor-pointer hover:scale-105 transition-all ease-in-out duration-500"
+              className=" pl-12 w-[30%] md:w-1/2 hover:cursor-pointer hover:scale-105 transition-all ease-in-out duration-500 rounded-[20px]"
               alt="Chainsaw Man Roblox Game"
             />
-            <div className="flex flex-col gap-y-4 text-center md:text-left">
+            <div className="flex flex-col gap-y-4 text-center md:text-left pl-20">
               <h2 className="font-bold text-2xl md:text-4xl">
                 Chainsaw Man Game
               </h2>
@@ -199,11 +202,11 @@ const Landing = () => {
         {/*RbxWOW project*/}
         <Fade bottom>
           <div className="flex flex-col-reverse items-center md:flex-row gap-y-8 px-2 md:px-4">
-            <div className="flex flex-col gap-y-4 text-center md:text-left">
+            <div className=" pl-20  flex flex-col gap-y-4 text-center md:text-left">
               <h2 className="font-bold text-2xl md:text-4xl">
                 Robux Earning Offer Website
               </h2>
-              <h3 className="text-secondary-color font-semibold text-lg md:text-2xl md:w-[80%]">
+              <h3 className="text-secondary-color font-semibold text-lg md:text-2xl md:w-[60%]">
                 I designed and developed RbxWow, a platform where users can
                 complete offers to earn Robux. Utilizing TypeScript, React, and
                 SCSS, I crafted a user-friendly interface. Behind the scenes, I
@@ -225,7 +228,7 @@ const Landing = () => {
                 setIndexImage(2);
               }}
               src={RbxWowPreview}
-              className="w-96 rounded-[20px] hover:cursor-pointer hover:scale-105 transition-all ease-in-out duration-500"
+              className="w-[25%] pr-10 rounded-[20px] hover:cursor-pointer hover:scale-105 transition-all ease-in-out duration-500"
               alt="Rbxwow earn robux offers"
             />
           </div>
@@ -235,10 +238,16 @@ const Landing = () => {
         <Fade bottom>
           <div className="relative">
             <img
-              src={ellipse_4}
-              className="absolute w-full md:w-2/3 h-[70rem] bottom-0 left-0 z-[-1]"
+              src={ellipse_b}
+              className="image-op absolute z-[-1] bottom-[-100%] left-0 w-1000 h-1000"
               alt="red ellipse"
             />
+            <img
+            src={boomIcon}
+            className="absolute pl-100 w-65 z-[-1] bottom-[-75%] left-[72%] ml-auto"
+            alt="boom"  
+          />  
+          <div className="relative"></div>
             <div className="flex gap-x-32 items-center flex-col md:flex-row gap-y-8 px-2 md:px-4">
               <img
                 onClick={() => {
@@ -246,10 +255,10 @@ const Landing = () => {
                   setIndexImage(3);
                 }}
                 src={cryptoStake}
-                className="w-96 rounded-[20px] hover:cursor-pointer hover:scale-105 transition-all ease-in-out duration-500"
+                className="pl-12 w-[22%] rounded-[20px] hover:cursor-pointer hover:scale-105 transition-all ease-in-out duration-500"
                 alt="Crypto Staking"
               />
-              <div className="flex flex-col gap-y-4 text-center md:text-left">
+              <div className="pl-20 flex flex-col gap-y-4 text-center md:text-left">
                 <h2 className="font-bold text-2xl md:text-4xl">
                   Crypto Staking Website
                 </h2>
@@ -265,6 +274,7 @@ const Landing = () => {
             </div>
           </div>
         </Fade>
+        
       </section>
     </main>
   );
