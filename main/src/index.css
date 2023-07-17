@@ -13,28 +13,32 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #111; 
+  background: #111;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
+}
+
+.text-balance {
+  text-wrap: balance;
 }
 
 .primary-gradient {
-  background-image: linear-gradient(to bottom, #EE466F, #901130);
+  background-image: linear-gradient(to bottom, #ee466f, #901130);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
 .red-gradient {
-  background-image: linear-gradient(to right, #EE466F, #901130);
+  background-image: linear-gradient(to right, #ee466f, #901130);
 }
 
 .transparency-image {
@@ -46,7 +50,7 @@ body {
 }
 
 .image-op {
-  animation: image-fade 5s infinite;
+  animation: image-fade 2s infinite;
 }
 
 .image-vert {
@@ -54,18 +58,34 @@ body {
 }
 
 @keyframes image-vertical {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes image-fade {
-  0% { opacity: .5; }
-  50% { opacity: 1; }
-  100% { opacity: .5; }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fade-in {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -3,11 +3,13 @@ import Header from "./components/Header";
 import Landing from "./components/Landing";
 
 const App = () => {
-  return <>
-    <Header />
-    <Landing />
-    <Footer />
-  </>;
+  return (
+    <>
+      <Header />
+      <Landing />
+      <Footer />
+    </>
+  );
 };
 
 export default App;
