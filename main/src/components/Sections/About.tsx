@@ -1,4 +1,4 @@
-import fireIcon from "../../assets/images/fireIcon.svg";
+import fireIcon from "../../assets/images/fireIcon.webp";
 import { usePageStore } from "../../store/pageStore";
 import { useInView } from "framer-motion";
 import { useRef, useEffect } from "react";
@@ -40,7 +40,7 @@ const About = () => {
               agility, and efficiency in programming.
             </h3>
           </div>
-          <div className="flex flex-col gap-y-12 gap-x-12 md:flex-row md:w-[98%] lg:w-3/5 justify-between">
+          <div className="flex flex-col flex-wrap gap-y-12 gap-x-12 md:flex-row md:w-[98%] lg:w-3/5 justify-between">
             <div className="flex flex-col gap-y-2">
               <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
                 Programming Languages:

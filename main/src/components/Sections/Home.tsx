@@ -1,5 +1,5 @@
 import ellipse_s from "../../assets/images/ellipse_s.svg";
-import fireGuy from "../../assets/images/fireGuy.svg";
+import fireGuy from "../../assets/images/fireGuy.webp";
 import { usePageStore } from "../../store/pageStore";
 import { motion, useInView } from "framer-motion";
 import { useRef, useEffect } from "react";

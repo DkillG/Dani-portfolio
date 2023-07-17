@@ -3,6 +3,7 @@ import { IOldWorksProps } from "../constant/oldWorks";
 import { useInView } from "framer-motion";
 import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
 import { useState } from "react";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export interface IWorkCardProps extends IOldWorksProps {
   setClickVisibleImage: () => void;
@@ -73,9 +74,9 @@ const WorkCard = ({
     <div
       ref={ref}
       style={{
-        transform: isInView ? "none" : "translateY(20%)",
+        transform: isInView ? "none" : "translateY(10%)",
         opacity: isInView ? 1 : 0,
-        transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.4s",
+        transition: "all 0.1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s",
       }}
       className={`work-card flex flex-col gap-y-8 ${
         side === "right" ? "md:flex-row" : "md:flex-row-reverse"
@@ -103,7 +104,7 @@ const WorkCard = ({
           {description}
         </p>
       </div>
-      <img
+      <LazyLoadImage
         onClick={() => {
           setClickVisibleImage();
           setIndexImage(idx);

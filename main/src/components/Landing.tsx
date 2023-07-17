@@ -4,9 +4,9 @@ import { usePageStore } from "../store/pageStore";
 
 import { workPictures } from "../constant/workPictures";
 import Notification from "./Notification";
-import Home from "./Sections/Home";
-import About from "./Sections/About";
-import Projects from "./Sections/Projects";
+import Home from "./sections/Home";
+import About from "./sections/About";
+import Projects from "./sections/Projects";
 
 const Landing = () => {
   const [visibleImage, setVisibleImage] = useState(false);
