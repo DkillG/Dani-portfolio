@@ -110,6 +110,7 @@ const WorkCard = ({
         }}
         className="md:w-[25%] rounded-xl hover:cursor-pointer hover:scale-105 transition-all ease-in-out duration-500"
         src={image}
+        alt={organization}
       />
     </div>
   );
