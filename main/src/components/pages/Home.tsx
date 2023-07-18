@@ -4,7 +4,6 @@ import fireGuy from "../../assets/images/fireGuy.webp";
 import { motion } from "framer-motion";
 
 const Home = () => {
-
   return (
     <section id="Home">
       <div className="relative">

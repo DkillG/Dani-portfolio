@@ -3,7 +3,7 @@ import { IOldWorksProps } from "../constant/oldWorks";
 import { useInView } from "framer-motion";
 import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
 import { useState } from "react";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export interface IWorkCardProps extends IOldWorksProps {
   setClickVisibleImage: () => void;

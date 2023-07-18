@@ -4,10 +4,8 @@ import { useRef } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const About = () => {
-
   const ref = useRef(null);
   const isInView = useInView(ref);
-
 
   return (
     <section
@@ -29,7 +27,9 @@ const About = () => {
         />
         <div className="flex flex-col gap-y-8 lg:w-[50%]">
           <div>
-            <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl primary-gradient">Skills</h2>
+            <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl primary-gradient">
+              Skills
+            </h2>
             <h3 className="font-semibold text-sm md:text-xl lg:text-2xl text-secondary-color">
               Throughout my programming career, I have undertaken diverse
               projects, ranging from games and libraries to websites and
