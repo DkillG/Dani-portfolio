@@ -34,12 +34,12 @@ const Landing = () => {
         images={Object.values(workPictures)}
         activeIndex={indexImage}
         rotatable={false}
-        zoomSpeed={2}
+        noResetZoomAfterChange={true}
         onMaskClick={() => setVisibleImage(false)}
         onClose={() => setVisibleImage(false)}
       />
 
-      <main className="flex flex-col gap-y-52 md:gap-y-64 mt-32 lg:mt-0 text-white">
+      <main className="flex flex-col gap-y-24 md:gap-y-12 mt-32 lg:mt-0 text-white">
         <Home />
         <About />
         <Projects

@@ -19,7 +19,7 @@ const TitleHeader = ({
   hover: boolean;
 }) => {
   const title = (
-    <h2 className="font-bold text-xl md:text-2xl">
+    <h2 className="font-bold text-lg md:text-2xl">
       {position} <b className="primary-gradient">||</b> {organization}
     </h2>
   );
@@ -100,7 +100,7 @@ const WorkCard = ({
             hover={hover}
           />
         </a>
-        <p className="text-secondary-color font-semibold text-base md:text-2xl text-balance">
+        <p className="text-secondary-color font-semibold text-sm md:text-2xl text-balance">
           {description}
         </p>
       </div>

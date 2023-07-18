@@ -26,7 +26,7 @@ const Footer = () => {
 
   return (
     <footer className="relative">
-      <div className="flex flex-col gap-y-8 justify-center items-center text-white mt-96 py-4">
+      <div className="flex flex-col gap-y-8 justify-center items-center text-white mt-72 py-4">
         <div>
           <ul className="flex gap-x-8">
             {footerLinks.map((el) => (

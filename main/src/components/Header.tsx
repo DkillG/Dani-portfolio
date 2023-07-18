@@ -42,7 +42,7 @@ const Header = () => {
                 onClick={() => scollTo(el.id)}
                 className={`${
                   section === el.id && "primary-gradient"
-                } hover:cursor-pointer hover:text-[#EE466F]`}
+                } hover:cursor-pointer hover:text-[#e5a3b5]`}
               >
                 {el.name}
               </li>
