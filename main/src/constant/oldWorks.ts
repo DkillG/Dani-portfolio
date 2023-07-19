@@ -34,7 +34,7 @@ export const OldWorks: IOldWorksProps[] = [
     organization: "Darling Waifu",
     image: workPictures.darlingWaifu.src,
     side: "left",
-    time: "01-2022 - 07-2023",
+    time: "01-2022 - 07-2022",
     description: `I started my career at DarlingWaifu as a Front-End JR, 
     gaining valuable experience in React and JavaScript. 
     The role also provided me with an exciting entry into the blockchain 

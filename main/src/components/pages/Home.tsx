@@ -1,9 +1,12 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import ellipse_s from "../../assets/images/ellipse_s.svg";
 import fireGuy from "../../assets/images/fireGuy.webp";
-import { motion } from "framer-motion";
+import { useState } from "react";
 
 const Home = () => {
+
+  const [ loadImage, setLoadImage ] = useState(false);
+
   return (
     <section id="Home">
       <div className="relative">
@@ -12,12 +15,7 @@ const Home = () => {
           alt="Red light flash"
           className="absolute z-[-1] -top-32 image-op"
         />
-        <motion.div
-          className="px-2 md:px-4 lg:px-0"
-          initial={{ opacity: 0, x: "100%" }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.2, ease: "easeInOut" }}
-        >
+        <div className={`px-2 md:px-4 lg:px-0 ${ loadImage ? 'opacity-100' : 'translate-x-96 opacity-0' } duration-200 ease-in-out`}>
           <div className="flex items-center justify-center md:justify-between lg:justify-center relative">
             <div className="flex lg:w-[50%] flex-col gap-y-6">
               <div className="flex flex-col gap-y-1">
@@ -40,10 +38,11 @@ const Home = () => {
               className="absolute md:relative w-96 md:w-[35%] z-[-1] md:z-0 opacity-50 md:opacity-100 blur-sm md:blur-none ease-in-out duration-200"
               src={fireGuy}
               width={400}
-              alt="Fire guy multi-colors"
+              height={400}
+              afterLoad={() => setLoadImage(true)}
             />
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

@@ -33,7 +33,7 @@ const Header = () => {
       <nav className="fixed w-full top-0 z-[999]">
         <div className="flex justify-between items-center bg-transparency-black backdrop-filter backdrop-blur-sm px-2 md:px-8 py-6">
           <div className="w-28 sm:w-32 md:w-auto pl-5">
-            <img alt="JustDkill logo" src={logo} />
+            <img alt="JustDkill logo w-auto" width={220} height={150} src={logo} />
           </div>
           <ul className="flex gap-x-4 md:gap-x-12 sm:gap-x-8 text-white text-xs sm:text-lg font-bold sm:font-bold md:text-2xl">
             {headerLinks.map((el) => (

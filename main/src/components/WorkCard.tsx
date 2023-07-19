@@ -1,6 +1,4 @@
-import { useRef } from "react";
 import { IOldWorksProps } from "../constant/oldWorks";
-import { useInView } from "framer-motion";
 import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -64,20 +62,12 @@ const WorkCard = ({
   setClickVisibleImage,
   setIndexImage,
 }: IWorkCardProps & { idx: number }) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
 
   const [hover, setHover] = useState(false);
   const setOnHover = () => setHover(!hover);
 
   return (
     <div
-      ref={ref}
-      style={{
-        transform: isInView ? "none" : "translateY(10%)",
-        opacity: isInView ? 1 : 0,
-        transition: "all 0.1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s",
-      }}
       className={`work-card flex flex-col gap-y-8 ${
         side === "right" ? "md:flex-row" : "md:flex-row-reverse"
       } items-center justify-between`}
