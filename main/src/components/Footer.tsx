@@ -55,7 +55,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <img alt="Gradient line" src={gradientLine} />
+        <img alt="Gradient line" src={gradientLine} width={300} height={10} />
         <div className="flex flex-col justify-center text-center">
           <h3 className="font-semibold text-sm md:text-lg">
             This page was created using React, TypeScript, and Tailwind
@@ -63,7 +63,7 @@ const Footer = () => {
           <p className="text-xs md:text-lg">Daniel &#169;2023 all copyright</p>
         </div>
       </div>
-      <img className="absolute image-op bottom-0 z-[-1]" src={ellipse_b} />
+      <img alt="Red flash light footer" className="absolute image-op bottom-0 z-[-1]" src={ellipse_b} />
     </footer>
   );
 };

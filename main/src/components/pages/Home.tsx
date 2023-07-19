@@ -39,6 +39,7 @@ const Home = () => {
               src={fireGuy}
               width={400}
               height={400}
+              alt="Fire guy multi-colors"
               afterLoad={() => setLoadImage(true)}
             />
           </div>

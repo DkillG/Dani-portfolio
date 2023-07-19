@@ -9,6 +9,7 @@ const Projects = ({
   return (
     <section id="Projects" className="relative md:mt-44">
       <img
+        alt="Blue flash light"
         className="absolute image-op md:-top-[5%] z-[-1] right-0"
         src={ellipse_m}
       />
