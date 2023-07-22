@@ -20,13 +20,12 @@ export const OldWorks: IOldWorksProps[] = [
     image: workPictures.myMetaverse.src,
     side: "right",
     time: "09-2022 - 07-2023",
-    description: `I worked at MyMetaverse as a Full-Stack developer, 
-    starting as a Junior. I handled various back-end tasks like 
-    managing MongoDB, using BloomRPC and RabbitMQ for services, 
-    and following Domain-Driven Design (DDD) principles. We utilized 
-    TypeScript and design patterns. For data serialization, we used 
-    Protocol Buffers. On the front-end, I developed diverse pages 
-    using Next.JS and TypeScript.`,
+    description: `I worked at MyMetaverse as a Full-Stack developer. 
+    I handled various back-end tasks like managing MongoDB, using 
+    BloomRPC and gRPC for services, and following Domain-Driven Design 
+    (DDD) principles. We utilized TypeScript and design patterns. 
+    For data serialization, we used Protocol Buffers. On the front-end, 
+    I developed diverse pages using Next.JS and TypeScript.`,
   },
   {
     url: "#",
@@ -35,7 +34,7 @@ export const OldWorks: IOldWorksProps[] = [
     image: workPictures.darlingWaifu.src,
     side: "left",
     time: "01-2022 - 07-2022",
-    description: `I started my career at DarlingWaifu as a Front-End JR, 
+    description: `I started my career at DarlingWaifu as a Front-End, 
     gaining valuable experience in React and JavaScript. 
     The role also provided me with an exciting entry into the blockchain 
     domain, where I mastered Web3 interaction, token handling, 
