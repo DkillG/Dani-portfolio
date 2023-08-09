@@ -31,6 +31,54 @@ body {
   text-wrap: balance;
 }
 
+.text-custom-color {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 0 / var(--tw-text-opacity)) !important;
+}
+
+@media (min-width: 768px) {
+  .md\:text-balance {
+    text-wrap: balance;
+  }
+
+  .md\:w-min-image {
+    width: 300px !important;
+  }
+
+  .md\:w-large-image {
+    width: 500px !important;
+  }
+}
+
+.text-2d79c7 { color: #2d79c7 !important; }
+.text-ebd64b { color: #ebd64b !important; }
+.text-fed142 { color: #fed142 !important; }
+.text-1d1d1d { color: #1d1d1d !important; }
+.text-01007f { color: #01007f !important; }
+.text-035a9a { color: #035a9a !important; }
+.text-f74a00 { color: #f74a00 !important; }
+.text-8bc03e { color: #8bc03e !important; }
+.text-00d3f8 { color: #00d3f8 !important; }
+.text-fe9900 { color: #fe9900 !important; }
+.text-0f3d2d { color: #0f3d2d !important; }
+.text-7ec061 { color: #7ec061 !important; }
+.text-006094 { color: #006094 !important; }
+.text-336691 { color: #336691 !important; }
+.text-8697f6 { color: #8697f6 !important; }
+.text-47bbb8 { color: #47bbb8 !important; }
+.text-dc31a4 { color: #dc31a4 !important; }
+.text-07b6d5 { color: #07b6d5 !important; }
+.text-bb6695 { color: #bb6695 !important; }
+.text-4ac9be { color: #4ac9be !important; }
+.text-ffffff { color: #ffffff !important; }
+
+.special-transition {
+  transition:
+    transform 0.3s ease-in-out,
+    filter 1s ease-in-out,
+    opacity 1s ease-in-out !important;
+}
+
 .primary-gradient {
   background-image: linear-gradient(to bottom, #ee466f, #901130);
   -webkit-text-fill-color: transparent;
